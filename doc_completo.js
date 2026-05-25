@@ -757,4 +757,3 @@ const doc = new Document({
 Packer.toBuffer(doc).then(buf => {
   fs.writeFileSync('Documentazione_CAT_completa.docx', buf);
 }).catch(e => { console.error(e); process.exit(1); });
-node /home/claude/doc_completo.js 
