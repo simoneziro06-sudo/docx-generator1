@@ -1,4 +1,3 @@
-cat > /home/claude/doc_completo.js << 'SCRIPTEOF'
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel,
   AlignmentType, BorderStyle, Table, TableRow, TableCell,
@@ -758,5 +757,4 @@ const doc = new Document({
 Packer.toBuffer(doc).then(buf => {
   fs.writeFileSync('Documentazione_CAT_completa.docx', buf);
 }).catch(e => { console.error(e); process.exit(1); });
-SCRIPTEOF
 node /home/claude/doc_completo.js 
