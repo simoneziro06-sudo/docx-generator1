@@ -699,6 +699,5 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  fs.writeFileSync('/mnt/user-data/outputs/Relazione_Progettuale.docx', buf);
-  console.log('done relazione');
+  fs.writeFileSync('Relazione_Progettuale.docx', buf);
 }).catch(e => { console.error(e); process.exit(1); });
